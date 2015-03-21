@@ -1,0 +1,45 @@
+//
+//  ViewController.m
+//  clickMe
+//
+//  Created by Nitin Pabba on 3/18/15.
+//  Copyright (c) 2015 Nitin Pabba. All rights reserved.
+//
+
+#import "ViewController.h"
+
+
+
+@implementation ViewController
+
+- (IBAction)clickMeButton:(id)sender {
+    
+    count++;
+    
+    seconds = 10;
+    
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score:%ld", (long)count];
+    self.timeLabel.text = [NSString stringWithFormat:@"Time : %ld", (long)seconds];
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target: self selector:@selector(subtractTime) userInfo:nil repeats:YES];
+    
+}
+
+-(void)subtractTime
+{
+    seconds--;
+    self.timeLabel.text =[NSString stringWithFormat:@"Time: %li",(long)seconds];
+    if (seconds == 0)
+    {
+        [timer invalidate];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Time is up!"
+                                                        message:[NSString stringWithFormat:@"You scored %li points", (long)count]
+                                                       delegate:self
+                                              cancelButtonTitle:@"Play Again"
+                                              otherButtonTitles:nil];
+        
+        [alert show];
+    }
+}
+
+@end
