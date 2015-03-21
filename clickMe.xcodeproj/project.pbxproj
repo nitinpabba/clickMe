@@ -14,6 +14,10 @@
 		831D52CD1ABA05A900328B21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831D52CC1ABA05A900328B21 /* Images.xcassets */; };
 		831D52D01ABA05A900328B21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831D52CE1ABA05A900328B21 /* LaunchScreen.xib */; };
 		831D52DC1ABA05A900328B21 /* clickMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 831D52DB1ABA05A900328B21 /* clickMeTests.m */; };
+		83ED0EEF1ABCD6B500AEBAF5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ED0EEE1ABCD6B500AEBAF5 /* AVFoundation.framework */; };
+		83ED0EF31ABCD74B00AEBAF5 /* ButtonTap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83ED0EF01ABCD74B00AEBAF5 /* ButtonTap.wav */; };
+		83ED0EF41ABCD74B00AEBAF5 /* HallOfTheMountainKing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83ED0EF11ABCD74B00AEBAF5 /* HallOfTheMountainKing.mp3 */; };
+		83ED0EF51ABCD74B00AEBAF5 /* SecondBeep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83ED0EF21ABCD74B00AEBAF5 /* SecondBeep.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		831D52D51ABA05A900328B21 /* clickMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clickMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		831D52DA1ABA05A900328B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		831D52DB1ABA05A900328B21 /* clickMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = clickMeTests.m; sourceTree = "<group>"; };
+		83ED0EEE1ABCD6B500AEBAF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		83ED0EF01ABCD74B00AEBAF5 /* ButtonTap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ButtonTap.wav; path = ../../../Downloads/TapMe_Resources/ButtonTap.wav; sourceTree = "<group>"; };
+		83ED0EF11ABCD74B00AEBAF5 /* HallOfTheMountainKing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = HallOfTheMountainKing.mp3; path = ../../../Downloads/TapMe_Resources/HallOfTheMountainKing.mp3; sourceTree = "<group>"; };
+		83ED0EF21ABCD74B00AEBAF5 /* SecondBeep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = SecondBeep.wav; path = ../../../Downloads/TapMe_Resources/SecondBeep.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83ED0EEF1ABCD6B500AEBAF5 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 		831D52B31ABA05A800328B21 = {
 			isa = PBXGroup;
 			children = (
+				83ED0EEE1ABCD6B500AEBAF5 /* AVFoundation.framework */,
 				831D52BE1ABA05A900328B21 /* clickMe */,
 				831D52D81ABA05A900328B21 /* clickMeTests */,
 				831D52BD1ABA05A900328B21 /* Products */,
@@ -96,6 +106,9 @@
 		831D52BF1ABA05A900328B21 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83ED0EF01ABCD74B00AEBAF5 /* ButtonTap.wav */,
+				83ED0EF11ABCD74B00AEBAF5 /* HallOfTheMountainKing.mp3 */,
+				83ED0EF21ABCD74B00AEBAF5 /* SecondBeep.wav */,
 				831D52C01ABA05A900328B21 /* Info.plist */,
 				831D52C11ABA05A900328B21 /* main.m */,
 			);
@@ -199,9 +212,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83ED0EF51ABCD74B00AEBAF5 /* SecondBeep.wav in Resources */,
 				831D52CB1ABA05A900328B21 /* Main.storyboard in Resources */,
 				831D52D01ABA05A900328B21 /* LaunchScreen.xib in Resources */,
+				83ED0EF31ABCD74B00AEBAF5 /* ButtonTap.wav in Resources */,
 				831D52CD1ABA05A900328B21 /* Images.xcassets in Resources */,
+				83ED0EF41ABCD74B00AEBAF5 /* HallOfTheMountainKing.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +428,7 @@
 				831D52E11ABA05A900328B21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		831D52E21ABA05A900328B21 /* Build configuration list for PBXNativeTarget "clickMeTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +437,7 @@
 				831D52E41ABA05A900328B21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
